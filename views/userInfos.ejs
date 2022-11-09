@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<% include ../views/head.ejs %>
+<html>
+  <body>
+    <div>
+      <h1>User informations</h1>
+        <h2> Family name : </h2><%= user.family_name %>
+        <h2> Given name : </h2> <%= user.given_name %>
+        <h2> Birth date : </h2><%= user.birthdate %>
+    </div>
+    <div>
+      <form method="post" action="/logout">
+        <button type="submit"> Se déconnecter</button>
+      </form>
+    </div>
+  </body>
+</html>
+
